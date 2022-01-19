@@ -1,0 +1,77 @@
+<!-- 
+    날짜 : 2022/01/19
+    이름 : 장현민
+    내용 : CSS Display 속성
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        div > span {background: orange;}
+        div > div {background: green;}
+
+        .box1 > span:nth-child(1) {visibility: hidden;}
+        .box1 > span:nth-child(2) {display: none;}
+
+        .box2 > span:nth-child(2) {
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box3 > div {
+            display: inline;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box4 > div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    <h4>Display</h4>
+    <div class="box1">
+        <span>TEXT1</span>
+        <span>TEXT2</span>
+        <span>TEXT3</span>
+    </div>
+
+    <h4>Display:block</h4>
+    <div class="box2">
+        <span>TEXT1</span>
+        <span>TEXT2</span>
+        <span>TEXT3</span>
+    </div>
+
+    <h4>Display:inline</h4>
+    <div class="box3">
+        <span>TEXT1</span>
+        <div>TEXT2</div>
+        <span>TEXT3</span>
+    </div>
+
+    <h4>Display:inline-block</h4>
+    <div class="box4">
+        <span>TEXT1</span>
+        <div>TEXT2</div>
+        <span>TEXT3</span>
+    </div>
+
+    
+
+
+
+</body>
+</html>
